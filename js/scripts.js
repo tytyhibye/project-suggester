@@ -25,4 +25,7 @@ $(document).ready(function() {
       $('#csharp').hide();
     }
   });
+  $("#results").submit(function() {
+    .reset();
+  });
 });
