@@ -8,24 +8,21 @@ $(document).ready(function() {
     var free = $("input:radio[name=free]:checked").val();
     if(dish === undefined || book === undefined || car === undefined || power === undefined || free === undefined) {
       alert('Please answer all of the questions');
-    } else if(free === 'game') {
-      $('#formGroup').toggle();
-      $('#js').hide();
-      $('#python').hide();
-      $('#csharp').fadeToggle();
-    } else if(free === 'surf') {
+    } else if(free === 'surf' || dish !== 'dirty' && book !== 'short' && car === 'drive' && power === 'speed') {
       $('#formGroup').toggle();
       $('#js').fadeToggle();
       $('#python').hide();
       $('#csharp').hide();
-    } else if(free === 'alexa') {
+    } else if(free === 'alexa' || dish === 'dirty' && book === 'short' && car !== 'looks' && power !== 'fly') {
       $('#formGroup').toggle();
       $('#js').hide();
       $('#python').fadeToggle();
       $('#csharp').hide();
-    }
-  });
-  $("#results").submit(function() {
-    .reset();
+    } else if(free === 'game' || dish === 'clean' && book === 'long' && car !== 'drive' && power !== 'speed') {
+      $('#formGroup').toggle();
+      $('#js').hide();
+      $('#python').hide();
+      $('#csharp').fadeToggle();
+    } 
   });
 });
