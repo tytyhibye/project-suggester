@@ -9,9 +9,20 @@ $(document).ready(function() {
     if(dish === undefined || book === undefined || car === undefined || power === undefined || free === undefined) {
       alert('Please answer all of the questions');
     } else if(dish === 'clean' && book === 'long' && car === 'looks' && power === 'fly' && free === 'game') {
+      $('#formGroup').hide();
       $('#js').hide();
       $('#python').hide();
       $('#csharp').show();
+    } else if(dish === 'clean' && book === 'long' && car === 'looks' && power === 'fly' && free === 'surf') {
+      $('#formGroup').hide();
+      $('#js').show();
+      $('#python').hide();
+      $('#csharp').hide();
+    } else if(dish === 'dirty' && book === 'short' && car === 'drive' && power === 'speed' && free === 'alexa') {
+      $('#formGroup').hide();
+      $('#js').hide();
+      $('#python').show();
+      $('#csharp').hide();
     }
   });
 });
