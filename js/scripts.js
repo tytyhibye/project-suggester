@@ -9,19 +9,19 @@ $(document).ready(function() {
     if(dish === undefined || book === undefined || car === undefined || power === undefined || free === undefined) {
       alert('Please answer all of the questions');
     } else if(free === 'game') {
-      $('#formGroup').fadeToggle();
+      $('#formGroup').toggle();
       $('#js').hide();
       $('#python').hide();
-      $('#csharp').show();
+      $('#csharp').fadeToggle();
     } else if(free === 'surf') {
-      $('#formGroup').fadeToggle();
-      $('#js').show();
+      $('#formGroup').toggle();
+      $('#js').fadeToggle();
       $('#python').hide();
       $('#csharp').hide();
     } else if(free === 'alexa') {
-      $('#formGroup').fadeToggle();
+      $('#formGroup').toggle();
       $('#js').hide();
-      $('#python').show();
+      $('#python').fadeToggle();
       $('#csharp').hide();
     }
   });

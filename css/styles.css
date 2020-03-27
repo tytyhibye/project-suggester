@@ -1,12 +1,17 @@
+body {
+  background-image: url("http://3.bp.blogspot.com/-TUNiKsGz6x4/VVaVlofDcKI/AAAAAAAAIBk/DPhRaTCXcpk/s1600/hd-website-backgrounds-pokemon-desktop-backgrounds-wallpaper-hd.jpg");
+  font-family: Trebuchet MS;
+  color: rgb(204, 204, 156);
+  padding-bottom: 20%;
+  background-size: cover;
+}
 img {
 width: 60%;
 margin-left: 15%;
 }
-text {
-  font-family: Trebuchet MS;
-}
 .jumbotron {
   background-color: rgba(94, 90, 90, 0.603);
+  text-align: center;
 }
 #csharp {
   display: none;
