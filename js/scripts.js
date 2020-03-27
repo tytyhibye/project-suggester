@@ -8,18 +8,18 @@ $(document).ready(function() {
     var free = $("input:radio[name=free]:checked").val();
     if(dish === undefined || book === undefined || car === undefined || power === undefined || free === undefined) {
       alert('Please answer all of the questions');
-    } else if(dish === 'clean' && book === 'long' && car === 'looks' && power === 'fly' && free === 'game') {
-      $('#formGroup').hide();
+    } else if(free === 'game') {
+      $('#formGroup').fadeToggle();
       $('#js').hide();
       $('#python').hide();
       $('#csharp').show();
-    } else if(dish === 'clean' && book === 'long' && car === 'looks' && power === 'fly' && free === 'surf') {
-      $('#formGroup').hide();
+    } else if(free === 'surf') {
+      $('#formGroup').fadeToggle();
       $('#js').show();
       $('#python').hide();
       $('#csharp').hide();
-    } else if(dish === 'dirty' && book === 'short' && car === 'drive' && power === 'speed' && free === 'alexa') {
-      $('#formGroup').hide();
+    } else if(free === 'alexa') {
+      $('#formGroup').fadeToggle();
       $('#js').hide();
       $('#python').show();
       $('#csharp').hide();
